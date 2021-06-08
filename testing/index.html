@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Common Styles */
+.content {
+    color: #fff;
+    font: 100 24px/100px sans-serif;
+    height: 150px;
+    width: 750px;
+    text-align: center;
+}
+
+.content div {
+    height: 50%;
+    width: 300px;
+}
+.red {
+    background: orangered;
+}
+.green {
+    background: yellowgreen;
+}
+.blue {
+    background: steelblue;
+}
+
+/* Flexbox Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+</style>
+
+<body>
+<h4>This is an example for flex-wrap:wrap </h4>
+<div class="content">
+  <div class="red">1</div>
+  <div class="green">2</div>
+  <div class="blue">3</div>
+</div>
+
+
+
+    <script>
+        
+        let data = {"a": "man", "b": "woman"}
+        // Object.entries(data).map(item => {
+        //     console.log(item)
+        // })
+
+        for (const key in data) {
+            const element = data[key];
+            // console.log(data);
+            console.log(`This ${element} is beautiful`);
+        }
+    </script>
+</body>
+</html>
